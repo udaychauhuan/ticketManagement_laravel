@@ -1,0 +1,81 @@
+
+
+Ticket Management
+
+Sr No
+Task
+1
+Login option for admin & Customer
+
+
+2
+Register option for Customer
+
+Register Page contains the below fields :
+Name
+Email
+Phone
+Password
+Confirm Password
+
+
+NOTE::
+For admin we don’t need to create register form, it will work based on DB entry 
+Once we register we need to send an email to customer with email and password 
+3
+Reset Password for admin and customer
+4
+Logout option
+5
+Purchase Ticket 
+In the menu give an option for the Purchase Ticket.
+When a user clicks on Purchase Ticket, display the page  with Ticket Drop down. 
+Customer can select the ticket from that dropdown & mention the Number of ticket and have an button for the Purchase
+We need to store that information for the user and total ticket purchased by the user
+We also need to store the ticket total price based on price per ticket * total ticket
+Customer can also do the payment using stripe payment gateway
+6
+Add Ticket
+In the page , give a button for add ticket
+When a user clicks on Add Ticket, Display a form with below fields
+Name
+Price per ticket
+Save these tickets on ticket table
+7
+Add Customer (Only for admin)
+Admin should be able to add new customer 
+Customer details should consists of name, email, phone and password 
+8
+Ticket Listing 
+Display all ticket related information in the listing
+Ticket Edit/Delete 
+User/Admin can edit and delete the ticket, if any one has not purchased the ticket
+9
+Ticket Purchase History Listing
+Display all ticket that has been purchased by user
+10
+User Listing (Only for admin)
+Display user name ,email and password
+User Edit/Delete
+Admin can only delete user if user have not purchase any ticket
+Admin should not be able to update user password.
+Check email should be unique if email is updated. (Example, if i am updating my email, my new email should not be there in database but i should be able to keep my email if i don’t want to  update).
+11
+Display on dashboard (Only for admin)
+Total Ticket 
+Display total Ticket created
+Total Purchased Count 
+Display total tickets purchased 
+Total Amount 
+                                   Display total purchase price by all purchasers
+12
+Customer should not be able to access admin routes and Admin should not be able to access customer routes.
+
+Admin have access to all things.
+
+
+13 feature 
+:- when new user is created he/she receive a welcome mail , from user side and admin side both
+:-when user buy  ticket he/she recive a purchased mail on their registered email
+:- user can create new ticket and when  other user buy other users ticket the owner of the ticket will recive the notification
+:- and so one
